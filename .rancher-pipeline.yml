@@ -2,6 +2,6 @@ stages:
 - name: dind
   steps:
   - runScriptConfig:
-      image: docker:dind
+      image: docker:19-dind
       shellScript: docker build -t test:v1 ./docker
 notification: {}
