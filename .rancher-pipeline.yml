@@ -1,0 +1,7 @@
+stages:
+- name: dind
+  steps:
+  - runScriptConfig:
+      image: docker:dind
+      shellScript: |-
+        docker build -t test:v1 ./docker
